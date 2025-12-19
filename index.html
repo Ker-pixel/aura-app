@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VibeCheck - Aura Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="title">VIBE CHECK</h1>
+        
+        <div id="input-screen">
+            <input type="text" id="username" placeholder="Enter Name..." autocomplete="off">
+            <button onclick="startAnalysis()">RATE ME</button>
+            <p class="ad-placeholder">Static Ad Space</p>
+        </div>
+
+        <div id="loading-screen" class="hidden">
+            <div class="spinner"></div>
+            <p>Calculating Aura...</p>
+        </div>
+
+        <div id="result-screen" class="hidden">
+            <div class="card" id="capture-area">
+                <h2 id="display-name">USER</h2>
+                <div id="score-display">000</div>
+                <p id="verdict-text"></p>
+                <small>Get rated at: vibecheck.app</small>
+            </div>
+            <button class="share-btn" onclick="reset()">Try Another</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
